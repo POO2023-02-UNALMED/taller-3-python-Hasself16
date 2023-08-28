@@ -69,7 +69,7 @@ class TV:
 
     def setVolumen(self,volumen):
         if volumen>=0 and volumen<=7 and self.estado:
-            self.canal=volumen
+            self.volumen=volumen
 
     def volumenUp(self):
         if self.volumen < 7 and self.estado:
