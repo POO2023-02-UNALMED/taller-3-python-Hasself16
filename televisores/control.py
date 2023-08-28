@@ -11,7 +11,7 @@ class Control:
     def getTv(self):
         return self.tv
     
-    @classmethod
-    def enlazar(cls, self, tv):
+    def enlazar(self, tv):
+        x=Control.nControl
         self.tv=tv
-        TV.setControl(cls.nControl)
+        TV.setControl(x)
