@@ -1,3 +1,5 @@
+from televisores.tv import TV
+
 class Control:
     def setTv(self, tv):
         self.tv=tv
@@ -7,3 +9,4 @@ class Control:
     
     def enlazar(self, tv):
         self.tv=tv
+        TV.setControl(Control)

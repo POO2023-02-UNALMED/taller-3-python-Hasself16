@@ -79,3 +79,9 @@ class TV:
     def volumenDown(self):
         if self.volumen > 0 and self.estado:
             self.volumen -= 1 
+    
+    def setControl(self, control):
+        self.control=control
+
+    def getControl(self):
+        return self.control
