@@ -13,33 +13,25 @@ class Control:
         tv.setControl(self)
 
     def turnOn(self):
-        if self.tv:
-            self.tv.turnOn()
+        self.tv.turnOn()
 
     def turnOff(self):
-        if self.tv:
-            self.tv.turnOff()
+        self.tv.turnOff()
 
     def canalUp(self):
-        if self.tv:
-            self.tv.canalUp()
+        self.tv.canalUp()
 
     def canalDown(self):
-        if self.tv:
-            self.tv.canalDown()
+        self.tv.canalDown()
 
     def volumenUp(self):
-        if self.tv:
-            self.tv.volumenUp()
+        self.tv.volumenUp()
 
     def volumenDown(self):
-        if self.tv:
-            self.tv.volumenDown()
+        self.tv.volumenDown()
 
     def setCanal(self, canal):
-        if self.tv:
-            self.tv.setCanal(canal)
+        self.tv.setCanal(canal)
 
     def setVolumen(self, volumen):
-        if self.tv:
-            self.tv.setVolumen(volumen)
+        self.tv.setVolumen(volumen)
