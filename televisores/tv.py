@@ -54,6 +54,10 @@ class TV:
     
     def setNumTV(cls,numero):
         cls.numTV=numero
+
+    def setCanal(self,canal):
+        if canal>=1 and canal<=120 and self.estado:
+            self.canal=canal
     
     def canalUp(self):
         if self.canal<120 and self.estado:
@@ -62,6 +66,10 @@ class TV:
     def canalDown(self):
         if self.canal>1 and self.estado:
             self.canal -= 1
+
+    def setVolumen(self,volumen):
+        if volumen>=0 and volumen<=7 and self.estado:
+            self.canal=volumen
 
     def volumenUp(self):
         if self.volumen < 7 and self.estado:
