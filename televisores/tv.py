@@ -1,5 +1,12 @@
 class TV:
     numTV=0
+    @classmethod
+    def getNumTV(cls):
+        return cls.numTV
+    
+    def setNumTV(cls,numero):
+        cls.numTV=numero 
+        
     def __init__(self, marca, estado):
         self.marca = marca
         self.canal = 1
@@ -47,13 +54,6 @@ class TV:
 
     def getEstado(self):
         return self.estado
-    
-    @classmethod
-    def getNumTV(cls):
-        return cls.numTV
-    
-    def setNumTV(cls,numero):
-        cls.numTV=numero
 
     def setCanal(self,canal):
         if canal>=1 and canal<=120 and self.estado:
