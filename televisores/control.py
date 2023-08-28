@@ -4,3 +4,6 @@ class Control:
     
     def getTv(self):
         return self.tv
+    
+    def enlazar(self, tv):
+        self.tv=tv
