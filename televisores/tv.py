@@ -1,6 +1,5 @@
 class TV:
-    numTV = 0
-
+    numTV=0
     def __init__(self, marca, estado):
         self.marca = marca
         self.canal = 1
@@ -52,6 +51,9 @@ class TV:
     @classmethod
     def getNumTV(cls):
         return cls.numTV
+    
+    def setNumTV(cls,numero):
+        cls.numTV=numero
     
     def canalUp(self):
         if self.canal<120 and self.estado:
